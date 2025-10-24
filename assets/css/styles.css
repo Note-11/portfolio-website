@@ -559,3 +559,71 @@ img {
   background: #fff;
   color: var(--first-color);
 }
+
+/* ===== Job History Section ===== */
+.job-history__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.job-history__item {
+  background: #1f1f1f;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.job-history__item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 6px;
+  height: 100%;
+  background: #00bcd4; /* timeline accent color */
+  border-radius: 3px;
+}
+
+.job-history__item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.job-history__content {
+  margin-left: 1rem;
+}
+
+.job-history__title {
+  font-size: 1.5rem;
+  color: #00bcd4;
+  margin-bottom: 0.3rem;
+}
+
+.job-history__role {
+  font-weight: 500;
+  color: #ccc;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.job-history__date {
+  font-size: 0.9rem;
+  color: #888;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.job-history__details {
+  list-style: disc;
+  padding-left: 1.2rem;
+  color: #ddd;
+  line-height: 1.6;
+}
+
+.job-history__details li {
+  margin-bottom: 0.5rem;
+}
